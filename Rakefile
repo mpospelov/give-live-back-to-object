@@ -19,9 +19,8 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = %Q{This gem is provided for easy to use faye in Ruby!}
   gem.description = %Q{
-    This Gem is build on top faye. 
+    This Gem is build on top of faye. 
     It has some easy to use helpers like faye_render, faye_subscribe, faye_publish.
-    It has rails controller like behavior.
   }
   gem.email = "mixan946@yandex.ru"
   gem.authors = ["Mikhail Pospelov"]
