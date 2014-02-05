@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = "give-live-back-to-object"
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mikhail Pospelov"]
-  s.date = "2014-01-27"
-  s.description = "\n    This Gem is build on top faye. \n    It has some easy to use helpers like faye_render, faye_subscribe, faye_publish.\n    It has rails controller like behavior.\n  "
+  s.date = "2014-02-05"
+  s.description = "\n    This Gem is build on top of faye. \n    It has some easy to use helpers like faye_render, faye_subscribe, faye_publish.\n  "
   s.email = "mixan946@yandex.ru"
   s.extra_rdoc_files = [
     "LICENSE.txt",
