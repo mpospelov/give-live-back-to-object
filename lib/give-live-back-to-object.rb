@@ -30,9 +30,10 @@ module GiveLive
       return lambda do |*args|
         begin
           yield(*args)
-        rescue Exception => e
-          logger.error "[ERROR IN FAYE THREAD] #{e.message}" 
-          logger.error e.backtrace.join("\n")
+        rescue => e
+          message = "[ERROR IN FAYE THREAD] #{e.message}"
+          message << e.backtrace.join("\n")
+          defined?(logger) ? logger.error(message) : puts(message)
         end
       end
     end
