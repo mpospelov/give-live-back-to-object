@@ -19,11 +19,6 @@ module GiveLive
       client.publish channel, message
     end
 
-    def faye_render(attrs)
-      raise "Error" if attrs[:template].blank? || attrs[:selector].blank?
-      faye_publish("/give_live_back_to_object/render/", attrs)
-    end
-
     private
 
     def wrap(&block)
@@ -40,10 +35,9 @@ module GiveLive
 
     def client
       @client ||= begin
-                    Thread.new { EM.run } unless EM.reactor_running?
-                    Thread.pass until EM.reactor_running?
-                    Faye::Client.new(ENV['FAYE_URL'])
-                  end
+        Faye.ensure_reactor_running!
+        Faye::Client.new(ENV['FAYE_URL'])
+      end
     end
     
   end
