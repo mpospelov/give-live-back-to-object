@@ -12,6 +12,7 @@ group :development do
   gem "jeweler", "~> 2.0.0"
   gem "simplecov", ">= 0"
   gem 'rspec'
+  gem 'byebug'
 end
 
 gem 'faye'

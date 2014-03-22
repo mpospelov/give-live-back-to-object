@@ -10,7 +10,12 @@ GEM
     addressable (2.3.5)
     atomic (1.1.14)
     builder (3.2.2)
+    byebug (2.7.0)
+      columnize (~> 0.3)
+      debugger-linecache (~> 1.2)
+    columnize (0.3.6)
     cookiejar (0.3.0)
+    debugger-linecache (1.2.0)
     descendants_tracker (0.0.3)
     diff-lcs (1.2.5)
     docile (1.1.2)
@@ -107,6 +112,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.0)
+  byebug
   eventmachine
   faye
   jeweler (~> 2.0.0)

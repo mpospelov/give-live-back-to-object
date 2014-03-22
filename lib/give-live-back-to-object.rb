@@ -1,4 +1,3 @@
-# require 'give_live_back_to_object/callbacks'
 require 'eventmachine'
 require 'faye'
 
@@ -26,7 +25,7 @@ module GiveLive
         begin
           yield(*args)
         rescue => e
-          message = "[ERROR IN FAYE THREAD] #{e.message}"
+          message = "[ERROR IN FAYE THREAD] #{e.message}\n"
           message << e.backtrace.join("\n")
           defined?(logger) ? logger.error(message) : puts(message)
         end
