@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "give-live-back-to-object"
-  s.version = "0.1.4"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mikhail Pospelov"]
-  s.date = "2014-03-21"
+  s.date = "2014-03-22"
   s.description = "\n    This Gem is build on top of faye. \n    It has some easy to use helpers like faye_render, faye_subscribe, faye_publish.\n  "
   s.email = "mixan946@yandex.ru"
   s.extra_rdoc_files = [
@@ -37,6 +37,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<jeweler>, ["~> 2.0.0"])
       s.add_development_dependency(%q<simplecov>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
+      s.add_development_dependency(%q<byebug>, [">= 0"])
     else
       s.add_dependency(%q<faye>, [">= 0"])
       s.add_dependency(%q<eventmachine>, [">= 0"])
@@ -46,6 +47,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<jeweler>, ["~> 2.0.0"])
       s.add_dependency(%q<simplecov>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
+      s.add_dependency(%q<byebug>, [">= 0"])
     end
   else
     s.add_dependency(%q<faye>, [">= 0"])
@@ -56,6 +58,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<jeweler>, ["~> 2.0.0"])
     s.add_dependency(%q<simplecov>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
+    s.add_dependency(%q<byebug>, [">= 0"])
   end
 end
 
